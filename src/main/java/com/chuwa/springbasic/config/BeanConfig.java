@@ -16,7 +16,6 @@ public class BeanConfig {
      * bean 名是方法名
      */
     @Bean
-    @Primary
     @Scope("prototype")
     public JpaChuwa myDataNucleus() {
         return new DataNucleusChuwaNoComponent();//new Object(), builder pattern
